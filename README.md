@@ -1,3 +1,3 @@
-# Task Management Application Front-end
+# Taskit Front-end
 
-This application acts as the front-end for the Task Management application developed throughout the *NestJS - Zero to Hero* course, produced by Ariel Weinberger.
+This application acts as the front-end for Taskit, backend is developed using Nestjs and is available here Taskit[https://github.com/frostzt/taskit]
