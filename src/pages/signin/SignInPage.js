@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Button, TextField } from '@material-ui/core';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import { Button, TextField } from "@material-ui/core";
+import styled from "styled-components";
 
-import './SignInPage.scss';
-import { inject } from 'mobx-react';
-import ErrorMessage from '../../components/ErrorMessage';
+import "./SignInPage.scss";
+import { inject } from "mobx-react";
+import ErrorMessage from "../../components/ErrorMessage";
 
 const Heading = styled.h1`
   margin-top: 0;
@@ -22,13 +22,13 @@ const FormField = styled(TextField)`
   width: 100%;
 `;
 
-@inject('userStore', 'routerStore')
+@inject("userStore", "routerStore")
 class SignInPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
       errorMesssage: null,
     };
   }
@@ -39,7 +39,7 @@ class SignInPage extends Component {
 
     try {
       await this.props.userStore.signin(username, password);
-      window.location.hash = '/tasks';
+      window.location.hash = "/tasks";
     } catch (error) {
       const errorMessage = error.response.data.message;
       this.setState({ errorMessage });
@@ -47,7 +47,7 @@ class SignInPage extends Component {
   };
 
   goToSignUp = () => {
-    window.location.hash = '/signup';
+    window.location.hash = "/signup";
   };
 
   render() {
@@ -58,7 +58,7 @@ class SignInPage extends Component {
         <FormContainer>
           <Heading>Hello!</Heading>
           <p>Fill in your username and password to sign in.</p>
-          
+
           {errorMessage && <ErrorMessage message={this.state.errorMessage} />}
 
           <div>
@@ -67,7 +67,7 @@ class SignInPage extends Component {
               label="Username"
               margin="dense"
               variant="outlined"
-              onChange={e => this.setState({ username: e.target.value })}
+              onChange={(e) => this.setState({ username: e.target.value })}
             />
           </div>
           <div>
@@ -77,13 +77,13 @@ class SignInPage extends Component {
               margin="dense"
               variant="outlined"
               type="password"
-              onChange={e => this.setState({ password: e.target.value })}
+              onChange={(e) => this.setState({ password: e.target.value })}
             />
           </div>
-          <hr/>
+          <hr />
           <div>
             <Button
-              style={{ marginBottom: '10px' }}
+              style={{ marginBottom: "10px" }}
               fullWidth
               variant="contained"
               color="primary"
