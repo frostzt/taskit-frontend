@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://frostzt.github.io/taskit-frontend/static/css/main.7f4a89a4.chunk.css",
+    "main.js": "https://frostzt.github.io/taskit-frontend/static/js/main.13a4c0bf.chunk.js",
+    "main.js.map": "https://frostzt.github.io/taskit-frontend/static/js/main.13a4c0bf.chunk.js.map",
+    "runtime~main.js": "https://frostzt.github.io/taskit-frontend/static/js/runtime~main.dc2d71f8.js",
+    "runtime~main.js.map": "https://frostzt.github.io/taskit-frontend/static/js/runtime~main.dc2d71f8.js.map",
+    "static/js/2.7a1e05c0.chunk.js": "https://frostzt.github.io/taskit-frontend/static/js/2.7a1e05c0.chunk.js",
+    "static/js/2.7a1e05c0.chunk.js.map": "https://frostzt.github.io/taskit-frontend/static/js/2.7a1e05c0.chunk.js.map",
+    "index.html": "https://frostzt.github.io/taskit-frontend/index.html",
+    "precache-manifest.24a6c1a51e67f20d2203302e39e0e105.js": "https://frostzt.github.io/taskit-frontend/precache-manifest.24a6c1a51e67f20d2203302e39e0e105.js",
+    "service-worker.js": "https://frostzt.github.io/taskit-frontend/service-worker.js",
+    "static/css/main.7f4a89a4.chunk.css.map": "https://frostzt.github.io/taskit-frontend/static/css/main.7f4a89a4.chunk.css.map"
+  }
+}
